@@ -6,6 +6,7 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
    <bean id="triangle" class="org.ramin.javabrains.Triangle">
-   <property name="message" value="Triangle"></property>
+   	<constructor-arg index="0" name="shapeType" type="java.lang.String" value="Equilateral"/>
+   	<constructor-arg index="1" name="height" type="int" value="20"/>
    </bean>
 </beans>

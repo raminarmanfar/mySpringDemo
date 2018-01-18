@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class DrawingApp {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		// Triangle triangle = new Triangle();
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring.xml"});
