@@ -1,29 +1,38 @@
 package org.ramin.javabrains;
 
 public class Triangle {
-	private String shapeType;
-	private int height;
+	private Point pointA;
+	private Point pointB;
+	private Point pointC;
 	
-	public Triangle(String shapeType) {
-		this.shapeType = shapeType;
+	
+	public Point getPointA() {
+		return pointA;
 	}
 
-	public Triangle(int height) {
-		this.height = height;
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
 	}
 
-	public Triangle(String shapeType, int height) {
-		this.shapeType = shapeType;
-		this.height = height;
+	public Point getPointB() {
+		return pointB;
+	}
+
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
+	}
+
+	public Point getPointC() {
+		return pointC;
+	}
+
+	public void setPointC(Point pointC) {
+		this.pointC = pointC;
 	}
 	
-	/*
-	public void setShapeType(String shapeType) {
-		this.shapeType = shapeType;
-	}
-	*/
-
 	public void draw() {
-		System.out.print(shapeType + " Triangle Drawn of height " + height);
+		System.out.println("Point A = (" + getPointA().getX() + ", " + getPointA().getY() + ")");
+		System.out.println("Point B = (" + getPointB().getX() + ", " + getPointB().getY() + ")");
+		System.out.println("Point C = (" + getPointC().getX() + ", " + getPointC().getY() + ")");
 	}
 }
