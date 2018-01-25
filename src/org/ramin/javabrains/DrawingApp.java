@@ -11,7 +11,7 @@ public class DrawingApp {
 		// Triangle triangle = new Triangle();
 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"spring.xml"});
 		BeanFactory factory = context;
-		Triangle triangle = (Triangle) factory.getBean("triangle");
+		Triangle triangle = (Triangle) factory.getBean("triangle1");
 		triangle.draw();
 	}
 }
