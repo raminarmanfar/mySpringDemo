@@ -6,20 +6,12 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="parentTriangle" class="org.ramin.javabrains.Triangle" abstract="true">
-		<property name="points">
-			<list>
-				<ref bean="pointA" />
-			</list>
-		</property>
+		<property name="pointA" ref="pointA"></property>
 	</bean>
 
 	<bean id="triangle1" class="org.ramin.javabrains.Triangle" parent="parentTriangle">
-		<property name="points">
-			<list merge="true">
-				<ref bean="pointB" />
-				<ref bean="pointC" />
-			</list>
-		</property>
+		<property name="pointB" ref="pointB"></property>
+		<property name="pointC" ref="pointC"></property>
 	</bean>
 
 	<bean id="pointA" class="org.ramin.javabrains.Point">
